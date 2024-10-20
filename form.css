@@ -1,0 +1,82 @@
+/* src/Form.css */
+
+body {
+    background-color: #f0f8ff; /* Light background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container {
+    max-width: 800px; /* Allow the form to grow */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    animation: fadeIn 0.5s ease; /* Animation on load */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create columns */
+    gap: 20px; /* Space between columns */
+  }
+  
+  form div {
+    flex: 1 1 calc(50% - 10px); /* Two columns, minus gap */
+    min-width: 250px; /* Minimum width for inputs */
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8em;
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
